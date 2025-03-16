@@ -191,5 +191,5 @@ for i in range(3):
 	expid = i + 1
 	fits.writeto("QUESTdata/unshiftedimage%d.fits" %expid ,master_sci_data[i],sci_head[i], output_verify = 'silentfix', overwrite= True)
 	fits.writeto("QUESTdata/FinalImage%d.fits" %expid, sciSky[i], sci_head[i], output_verify = "silentfix", overwrite= True)
-print('Reduced Images Saved')
+print('Reduced Images Saved to QUESTdata folder and ready for viewing')
 print('')
